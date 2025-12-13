@@ -1,0 +1,16 @@
+{
+  "id": "player_test1",
+  "displayName": "Test",
+  "x": 1,
+  "y": 2,
+  "dir": "down",
+  "save": {
+    "hp": 10,
+    "maxHp": 10,
+    "gold": 3
+  },
+  "partyId": "party_test1",
+  "story": {
+    "currentRegionId": "dawnrise"
+  }
+}

@@ -1,0 +1,147 @@
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #111;
+  color: #eee;
+}
+
+#root {
+  height: 100%;
+  display: grid;
+
+#overworld {
+  margin-top: 10px;
+  image-rendering: pixelated;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(20, 20, 20, 0.55);
+}
+  place-items: center;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+#hud {
+  width: min(960px, 100%);
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+  color: #ddd;
+  font-size: 13px;
+}
+
+#status {
+  opacity: 0.9;
+}
+
+#hint {
+  opacity: 0.75;
+  text-align: right;
+}
+
+#game {
+  width: min(960px, 100%);
+  height: auto;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: #0b0b0b;
+  image-rendering: pixelated;
+}
+
+#menu {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+#menu > div,
+#menu-title,
+#menu-body,
+#menu-actions {
+  max-width: min(560px, calc(100vw - 32px));
+}
+
+#menu-title {
+  font-size: 20px;
+  font-weight: 650;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+#menu-body {
+  opacity: 0.9;
+  margin-bottom: 14px;
+  white-space: pre-line;
+}
+
+#menu-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#battle-ui {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.battle-panel {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(20, 20, 20, 0.65);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.battle-panel h3 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+#battle-log {
+  white-space: pre-line;
+  max-height: 120px;
+  overflow: auto;
+  line-height: 1.25;
+  opacity: 0.9;
+}
+
+.battle-commands {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+#menu-title,
+#menu-body,
+#menu-actions {
+  background: rgba(20, 20, 20, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: #eee;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.hidden {
+  display: none !important;
+}

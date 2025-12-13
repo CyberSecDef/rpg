@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>RPG</title>
+		<link rel="stylesheet" href="/styles/style.css" />
+	</head>
+	<body>
+		<div id="root">
+			<div id="hud">
+				<div id="status">Connecting…</div>
+				<div id="hint">Move: WASD / Arrow Keys · Menu: Esc · Interact: Enter</div>
+				<canvas id="overworld" width="200" height="120" aria-label="Overworld map"></canvas>
+			</div>
+
+			<canvas id="game" width="320" height="180" aria-label="RPG canvas"></canvas>
+
+			<div id="menu" class="hidden" role="dialog" aria-modal="true">
+				<div id="menu-title"></div>
+				<div id="menu-body"></div>
+				<div id="menu-actions"></div>
+			</div>
+
+			<input id="savefile" type="file" accept="application/json" class="hidden" />
+		</div>
+
+		<script src="/js/shared.js"></script>
+		<script src="/js/worldRenderer.js"></script>
+		<script src="/js/battleUI.js"></script>
+		<script src="/js/client.js"></script>
+	</body>
+</html>
