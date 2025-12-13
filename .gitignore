@@ -1,0 +1,27 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.nyc_output/
+coverage/
+.DS_Store # macOS specific
+.env
+.env.*
+*.log
+*.tgz
+*.zip
+
+# Build artifacts
+dist/
+build/
+out/
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS specific files
+Thumbs.db
